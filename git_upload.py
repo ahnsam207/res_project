@@ -3,7 +3,7 @@ import requests
 import base64
 
 # GitHub 정보
-GITHUB_REPO = "ahnsam207/res"
+GITHUB_REPO = "ahnsam207/res_project"
 GITHUB_TOKEN =  st.secrets["git_token"]   # 개인 액세스 토큰 입력
 BRANCH = "main"  # 사용할 브랜치
 

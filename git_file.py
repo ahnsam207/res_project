@@ -20,10 +20,11 @@ st.sidebar.text("※ 융합교과는 [수학-프로그래밍] 형식으로 입�
 
 # 메인
 uploaded_file = st.file_uploader("계획서 파일을 업로드하세요")
-uploaded_file.name = select_option + "_" + user_name + "_" + subject + "_" + uploaded_file
+
 
 if uploaded_file is not None:
     file_content = uploaded_file.getvalue()
+    uploaded_file.name = select_option + "_" + user_name + "_" + subject + "_" + uploaded_file.name
     file_path = f"upload/{uploaded_file.name}"
 
     # GitHub API URL
